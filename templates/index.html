@@ -182,7 +182,7 @@ body {
 
                       <h2>Пациент {{row.id}}</h2>
 
-                      <h2>Риск летального исхода: {{row.predict}}</h2>
+                      <h2>Риск летального исхода: {{row.predict}} %</h2>
 
                       <h2>Интерпретация</h2>
                       <iframe src="static/{{row.id}}.html" width=1024 height=200 frameborder=0></iframe>
@@ -222,7 +222,7 @@ body {
                     <thead>
                     <tr>
                         <th>Пациент</th>
-                        <th>Критичность</th>
+                        <th>Риск летального исхода, %</th>
                     <tr>
                     </thead>
 
