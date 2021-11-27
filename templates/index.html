@@ -182,15 +182,13 @@ body {
 
                       <h2>Пациент {{row.id}}</h2>
 
-                      <h2>Риск летального исхода</h2>
-                      {{row.predict}}
+                      <h2>Риск летального исхода: {{row.predict}}</h2>
+
+                      <h2>Интерпретация</h2>
+                      <iframe src="static/{{row.id}}.html" width=1024 height=200 frameborder=0></iframe>
 
                       <h2>История болезни</h2>
                       {{row.text}}
-
-                      <h2>Интерпретация</h2>
-
-                      <div>{{result.info}}</div>
 
                     {% endfor %}
 
