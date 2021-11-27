@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div0972NED8OJTC0MB"></div>
+        <div class="lime top_div" id="top_divQM402LR0TU3OCCB"></div>
         
         <script>
-        var top_div = d3.select('#top_div0972NED8OJTC0MB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divQM402LR0TU3OCCB').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [1.0, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.7214137974988077, 0.2785862025011923]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["00 температура тела 36 <= 0.00", 0.0], ["02 2016 <= 0.00", 0.0], ["03 2016 <= 0.00", 0.0], ["03 2017 <= 0.00", 0.0], ["04 2016 <= 0.00", 0.0]], 1, exp_div);
+                exp.show([["аортальный стеноз <= 0.00", -0.004558027657583064], ["60 мм рт ст <= 0.00", -0.00431482130983805], ["геморрагический диатез > 0.00", 0.0026775571004148757], ["неврологический статус > 0.00", 0.0025708253721579543], ["за счет <= 0.00", -0.0021635483223873798]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["00 температура тела 36", "0.00", 0.0], ["02 2016", "0.00", 0.0], ["03 2016", "0.00", 0.0], ["03 2017", "0.00", 0.0], ["04 2016", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["аортальный стеноз", "0.00", -0.004558027657583064], ["60 мм рт ст", "0.00", -0.00431482130983805], ["геморрагический диатез", "0.06", 0.0026775571004148757], ["неврологический статус", "0.13", 0.0025708253721579543], ["за счет", "0.00", -0.0021635483223873798]], 1, raw_div);
         
         </script>
         </body></html>

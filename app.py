@@ -43,7 +43,7 @@ def index():
     filename = 'df.csv'
     q = request.args.get('q') or ''
     ofs = 0
-    per_page = 10
+    per_page = 20
 
     key = request.args.get('id') or ''
     data = filter_table(filename, q, ofs, per_page, key)

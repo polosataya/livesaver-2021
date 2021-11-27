@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divKBAM6ETS1BGCSZQ"></div>
+        <div class="lime top_div" id="top_divMGS3L3KGIBKSQGE"></div>
         
         <script>
-        var top_div = d3.select('#top_divKBAM6ETS1BGCSZQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divMGS3L3KGIBKSQGE').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.2897021951591865, 0.7102978048408135]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.8224824665699675, 0.1775175334300325]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["05 2015 > 0.00", 0.020577748774769308], ["04 2015 > 0.00", 0.018476689306880727], ["09 2015 > 0.00", 0.011753032310597883], ["60 мм рт ст <= 0.00", -0.004526205503496698], ["за счет > 0.00", 0.003906410590703002]], 1, exp_div);
+                exp.show([["60 мм рт ст <= 0.00", -0.004648143230819443], ["аортальный стеноз <= 0.00", -0.004538910907632399], ["неврологический статус > 0.00", 0.002588605236536605], ["легочная гипертензия <= 0.00", -0.002561765416926839], ["за счет <= 0.00", -0.0024030086552540137]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["05 2015", "0.06", 0.020577748774769308], ["04 2015", "0.10", 0.018476689306880727], ["09 2015", "0.06", 0.011753032310597883], ["60 мм рт ст", "0.00", -0.004526205503496698], ["за счет", "0.04", 0.003906410590703002]], 1, raw_div);
+            exp.show_raw_tabular([["60 мм рт ст", "0.00", -0.004648143230819443], ["аортальный стеноз", "0.00", -0.004538910907632399], ["неврологический статус", "0.09", 0.002588605236536605], ["легочная гипертензия", "0.00", -0.002561765416926839], ["за счет", "0.00", -0.0024030086552540137]], 1, raw_div);
         
         </script>
         </body></html>

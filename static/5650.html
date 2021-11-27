@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div0972NED8OJTC0MB"></div>
+        <div class="lime top_div" id="top_divC069GXEU7ZRZAAG"></div>
         
         <script>
-        var top_div = d3.select('#top_div0972NED8OJTC0MB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divC069GXEU7ZRZAAG').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [1.0, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.7330208950666739, 0.26697910493332605]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["00 температура тела 36 <= 0.00", 0.0], ["02 2016 <= 0.00", 0.0], ["03 2016 <= 0.00", 0.0], ["03 2017 <= 0.00", 0.0], ["04 2016 <= 0.00", 0.0]], 1, exp_div);
+                exp.show([["аортальный стеноз <= 0.00", -0.0046769922793075385], ["60 мм рт ст <= 0.00", -0.004496560761538976], ["неврологический статус > 0.00", 0.0027539044797384414], ["геморрагический диатез > 0.00", 0.0027043299072026105], ["за счет <= 0.00", -0.0024765780060707876]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["00 температура тела 36", "0.00", 0.0], ["02 2016", "0.00", 0.0], ["03 2016", "0.00", 0.0], ["03 2017", "0.00", 0.0], ["04 2016", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["аортальный стеноз", "0.00", -0.0046769922793075385], ["60 мм рт ст", "0.00", -0.004496560761538976], ["неврологический статус", "0.10", 0.0027539044797384414], ["геморрагический диатез", "0.05", 0.0027043299072026105], ["за счет", "0.00", -0.0024765780060707876]], 1, raw_div);
         
         </script>
         </body></html>

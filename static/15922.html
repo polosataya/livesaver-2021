@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div0972NED8OJTC0MB"></div>
+        <div class="lime top_div" id="top_div3YS2ZMZX6VK9DYW"></div>
         
         <script>
-        var top_div = d3.select('#top_div0972NED8OJTC0MB').classed('lime top_div', true);
+        var top_div = d3.select('#top_div3YS2ZMZX6VK9DYW').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [1.0, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.38937671219980097, 0.610623287800199]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["00 температура тела 36 <= 0.00", 0.0], ["02 2016 <= 0.00", 0.0], ["03 2016 <= 0.00", 0.0], ["03 2017 <= 0.00", 0.0], ["04 2016 <= 0.00", 0.0]], 1, exp_div);
+                exp.show([["05 2013 > 0.00", 0.049033163577366964], ["01 2013 > 0.00", 0.04121801054638089], ["60 мм рт ст > 0.00", 0.006116410256629112], ["аортальный стеноз <= 0.00", -0.005014456534429659], ["за счет > 0.00", 0.003499452957817493]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["00 температура тела 36", "0.00", 0.0], ["02 2016", "0.00", 0.0], ["03 2016", "0.00", 0.0], ["03 2017", "0.00", 0.0], ["04 2016", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["05 2013", "0.08", 0.049033163577366964], ["01 2013", "0.08", 0.04121801054638089], ["60 мм рт ст", "0.12", 0.006116410256629112], ["аортальный стеноз", "0.00", -0.005014456534429659], ["за счет", "0.10", 0.003499452957817493]], 1, raw_div);
         
         </script>
         </body></html>

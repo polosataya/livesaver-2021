@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div0972NED8OJTC0MB"></div>
+        <div class="lime top_div" id="top_divTES6CINE8B313T0"></div>
         
         <script>
-        var top_div = d3.select('#top_div0972NED8OJTC0MB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divTES6CINE8B313T0').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [1.0, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.6379962429453503, 0.36200375705464977]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["00 температура тела 36 <= 0.00", 0.0], ["02 2016 <= 0.00", 0.0], ["03 2016 <= 0.00", 0.0], ["03 2017 <= 0.00", 0.0], ["04 2016 <= 0.00", 0.0]], 1, exp_div);
+                exp.show([["07 2016 > 0.00", 0.006764303291346268], ["60 мм рт ст <= 0.00", -0.004660041172841662], ["аортальный стеноз <= 0.00", -0.0036815666269067225], ["неврологический статус > 0.00", 0.003428114061865184], ["за счет > 0.00", 0.0032830591881025718]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["00 температура тела 36", "0.00", 0.0], ["02 2016", "0.00", 0.0], ["03 2016", "0.00", 0.0], ["03 2017", "0.00", 0.0], ["04 2016", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["07 2016", "0.14", 0.006764303291346268], ["60 мм рт ст", "0.00", -0.004660041172841662], ["аортальный стеноз", "0.00", -0.0036815666269067225], ["неврологический статус", "0.10", 0.003428114061865184], ["за счет", "0.04", 0.0032830591881025718]], 1, raw_div);
         
         </script>
         </body></html>
