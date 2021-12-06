@@ -47,10 +47,13 @@ def index():
 
     key = request.args.get('id') or ''
     data = filter_table(filename, q, ofs, per_page, key)
+    
+    text = ''
+    if key:
+        text = data['rows'][0]['text']
+        text = text.replace('\n', '<br>')
 
-    result = {'info': 'состояние удовлетворительное'}
-
-    return render_template('index.html', data=data, id=key, result=result, q=q)
+    return render_template('index.html', data=data, id=key, result=text, q=q)
 
 
 if __name__ == '__main__':

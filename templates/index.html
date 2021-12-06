@@ -188,7 +188,9 @@ body {
                       <iframe src="static/{{row.id}}.html" width=1024 height=200 frameborder=0></iframe>
 
                       <h2>История болезни</h2>
-                      {{row.text}}
+                        {% autoescape false %}
+                        {{result}}
+                        {% endautoescape %}
 
                     {% endfor %}
 
