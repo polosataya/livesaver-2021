@@ -224,7 +224,7 @@ body {
                     <thead>
                     <tr>
                         <th>Пациент</th>
-                        <th>Риск летального исхода, %</th>
+                        <th width="20%">Риск летального исхода, %</th>
                     <tr>
                     </thead>
 
@@ -232,7 +232,11 @@ body {
                     {% for row in data.rows %}
                       <tr>
                         <td><a href="?id={{row.id}}">{{row.id}}</a></td>
-                        <td>{{row.predict}}</td>
+                        {% if row.predict|int > 50 %}
+                            <td bgcolor="red">{{row.predict}}</td>
+                        {% else %}
+                            <td>{{row.predict}}</td>
+                        {% endif %}
                       </tr>
                     {% endfor %}
                     </tbody>
